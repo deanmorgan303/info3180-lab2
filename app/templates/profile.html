@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+ <html>
+     <head>
+         <title>profile Page</title>
+         <meta charset="utf-8" />
+     </head>  
+     <body>
+      {% extends 'base.html' %}
+         {% block main %} 
+         <header>
+         <img class="profile_pictures"src="{{ url_for('static', filename='profile.jpg') }}"> 
+         <h2>Dean Morgan </h2>
+         <h4>@deanmorgan303</h3> 
+         <h4>University of the west indies Mona </h4> 
+         <h4>{{ date }}</h4>
+         </header>
+         <body >
+         <div class="protile_body">
+           <div class="post">
+            <h4>Posts</h4>
+            <h4>12</h4>
+           </div> 
+           <div class="followers">
+            <h4>Followers</h4>
+           <h4>350</h4> 
+           </div> 
+           <div class="following"> 
+           <h4>following</h4>
+           <h4>400</h4> 
+           </div>
+           <button class="follow" type=button>Follow</button> 
+         </div>
+         {% endblock %}
+     </body>
+ </html>
